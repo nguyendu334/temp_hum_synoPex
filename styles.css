@@ -1,0 +1,214 @@
+@font-face {
+    font-family: myDigitalFont;
+    src: url(./font/digital-7\ \(mono\ italic\).ttf);
+}
+
+#container {
+    width: 1920px;
+    height: 1080px;
+}
+
+#tieude {
+    /* z-index: 9999; */
+    /* position: relative; */
+    font-size: 30px;
+    text-align: center;
+    width: 1920px;
+    left: 0px;
+    top: 0px;
+    height: 64.976px;
+    background: #313444;
+}
+
+#tieude span {
+    /* line-height: 75px; */
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.svg-list {
+    margin-bottom: 5px;
+    width: 34px;
+}
+
+a.logo {
+    top: 10px;
+    position: absolute;
+    font-size: 34px;
+    color: rgb(33 26 224);
+    text-transform: uppercase;
+    left: 60px;
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+a.logo b {
+    font-weight: 900;
+}
+
+a.logo span {
+    color: rgb(243 183 3);
+    background: url(https://24.media.tumblr.com/tumblr_m87dri70zh1qzla33o1_500.gif);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.NameProject {
+    background: rgb(255, 255, 255);
+    background-size: 300px 50px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Time new roman";
+}
+
+.syno {
+    background: #4d66f3;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Time new roman";
+    font-size: 34px;
+    left: 60px;
+}
+
+#myTime {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Time new roman";
+}
+
+/* wrapper */
+#wapper {
+    position: relative;
+    width: 100%;
+    height: 993.345px;
+    /* background: black; */
+}
+
+.chartBox {
+    position: absolute;
+    display: inline-block;
+    width: 960px;
+    height: 208px;
+    background: rgb(255, 255, 255);
+}
+
+.chartBox1 {
+    position: absolute;
+    display: inline-block;
+    left: 960px;
+    width: 960px; 
+    height: 208px;
+    background: rgb(255, 255, 255);
+}
+
+.temp{
+    position: relative;
+    display: inline;
+    left: 435px;
+    background: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+.hum{
+    position: relative;
+    display: inline;
+    left: 1350px;
+    background: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#left-wapper {
+    position: absolute;
+    width: 1447.981px;
+    height: 784.551px;
+    top: 208.924px;
+    background: rgb(248, 244, 244);
+}
+
+#right-wapper {
+    position: absolute;
+    left: 1447.981px;
+    top: 208.924px;
+    width: 472.019px;
+    height: 784.551px;
+    background: rgb(248, 244, 244);
+}
+
+#footer {
+    height: 21.126px;
+    background: rgb(153, 247, 247);
+    position: relative;
+}
+
+@keyframes loader {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 200px;
+    }
+}
+
+.process {
+    position: absolute;
+    height: 17px;
+    border-radius: 5px;
+    top: 1.5px;
+    left: 314px;;
+    animation: loader 8s linear infinite;
+    background: #dbeb05;
+    border: none;
+}
+
+.black {
+    background: black;
+}
+
+.green {
+    background: rgb(31, 155, 31);
+    box-shadow: 0px 1px 2px rgb(31, 155, 31);
+}
+
+#hmi{
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    border-radius: 100%;
+    top: 2px;
+    left: 802px;
+    border: none;
+}
+
+#connect{
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    border-radius: 100%;
+    top: 2px;
+    left: 660px;
+    border: none;
+}
+
+#timedata{
+    position: absolute;
+    height: 17px;
+    width: 500px;
+    top: 2px;
+    right: 255px;
+    border: none;
+    font-size: 15px;
+    font-family: "times new roman";
+}
+
+
+
