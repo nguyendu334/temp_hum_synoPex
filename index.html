@@ -46,18 +46,18 @@
             <div class="chartBox" style="border: #000000 1px solid;">
                 <canvas id="myChart" width="960" height="188"></canvas>
             </div>
-            
+
             <div class="chartBox1" style="border: #000000 1px solid;">
                 <canvas id="myChart1" width="960" height="188"></canvas>
             </div>
 
-            <iframe src="./svg/drawing.svg" frameborder="0" id="left-wapper" ></iframe>
+            <iframe src="./svg/drawing.svg" frameborder="0" id="left-wapper"></iframe>
 
             <div id="right-wapper" style="overflow: auto; border: #000000 1.5px solid;">
                 <table border="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
                 </table>
 
-                <button class= "button-export" onclick="Export()">Export Data</button>
+                <button class="button-export" onclick="Export()">Export Data</button>
 
             </div>
         </section>
@@ -76,50 +76,52 @@
             <input id="hmi" class="black green" type="text" disabled />
 
             <span
-                style=" position: absolute;left:990px;font-size: 17px; text-transform: uppercase;line-height: 20px;top:1px; font-family: Time new roman ">TIME UPDATE DATA:</span>
+                style=" position: absolute;left:990px;font-size: 17px; text-transform: uppercase;line-height: 20px;top:1px; font-family: Time new roman ">TIME
+                UPDATE DATA:</span>
             <input id="timedata" type="text" disabled />
 
         </section>
     </div>
 
     <script>
-      var d = new Date()
-      var m = d.getMonth() + 1;
+        var d = new Date()
+        var m = d.getMonth() + 1;
 
-      function Export() {
-        $("#sheet0").table2excel({
-            filename: "Dữ_liệu_nhiệt_độ_độ_ẩm" + "_tháng_" + m + ".xls",
-            preserveColors: true
-        });
-    }
+        function Export() {
+            $("#sheet0").table2excel({
+                filename: "Dữ_liệu_nhiệt_độ_độ_ẩm" + "_tháng_" + m + ".xls",
+                preserveColors: true
+            });
+        }
 
-    setInterval(() => {
-    timer();
-}, 1)
+        setInterval(() => {
+            timer();
+        }, 1)
 
-sigmqtt = 0;
-const timer = () => {
-    var date = new Date();
-    var month = date.getMonth() + 1;
-    var year = date.getFullYear();
-    var day = date.getDate();
-    var h = date.getHours();
-    var m = date.getMinutes();
-    var s = date.getSeconds();
-    if (h < 10) h = "0" + h;
-    if (m < 10) m = "0" + m;
-    if (s < 10) s = "0" + s;
-    if (day < 10) day = "0" + day;
-    if (month < 10) month = "0" + month;
-    document.getElementById("myTime").innerHTML =
-        h + ":" + m + ":" + s + "      " + day + "/" + month + "/" + year;
-    sigmqtt++;
-    timedata.value = new Date()
-}
+        sigmqtt = 0;
+        const timer = () => {
+            var date = new Date();
+            var month = date.getMonth() + 1;
+            var year = date.getFullYear();
+            var day = date.getDate();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            if (h < 10) h = "0" + h;
+            if (m < 10) m = "0" + m;
+            if (s < 10) s = "0" + s;
+            if (day < 10) day = "0" + day;
+            if (month < 10) month = "0" + month;
+            document.getElementById("myTime").innerHTML =
+                h + ":" + m + ":" + s + "      " + day + "/" + month + "/" + year;
+            sigmqtt++;
+            timedata.value = new Date()
+        }
     </script>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="./scripts/mqttws31.min.js"></script>
     <script src="./scripts/script.js" type="text/javascript"></script>
     <script src="./scripts/table2excel.js"></script>
 </body>
+
 </html>
