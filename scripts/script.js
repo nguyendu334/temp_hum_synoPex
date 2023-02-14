@@ -323,14 +323,14 @@ function rd() {
             document.getElementById("left-wapper").getSVGDocument().getElementById(`fill4`).style.fill = "black";
         }
         
-        if (Object.values(db.nhiệt_độ.lazer1)[Object.values(db.nhiệt_độ.lazer1).length - 1] > 23 || Object.values(db.nhiệt_độ.lazer1)[Object.values(db.nhiệt_độ.lazer1).length - 1] < 20) {
+        if (Object.values(db.nhiệt_độ.lazer1)[Object.values(db.nhiệt_độ.lazer1).length - 1] > 23 || Object.values(db.nhiệt_độ.lazer1)[Object.values(db.nhiệt_độ.lazer1).length - 1] < 17) {
             document.getElementById("left-wapper").getSVGDocument().getElementById(`fill5`).style.fill = "red";
         }
         else {
             document.getElementById("left-wapper").getSVGDocument().getElementById(`fill5`).style.fill = "black";
         }
         
-        if (Object.values(db.nhiệt_độ.lazer2)[Object.values(db.nhiệt_độ.lazer2).length - 1] > 23 || Object.values(db.nhiệt_độ.lazer2)[Object.values(db.nhiệt_độ.lazer2).length - 1] < 20) {
+        if (Object.values(db.nhiệt_độ.lazer2)[Object.values(db.nhiệt_độ.lazer2).length - 1] > 23 || Object.values(db.nhiệt_độ.lazer2)[Object.values(db.nhiệt_độ.lazer2).length - 1] < 17) {
             document.getElementById("left-wapper").getSVGDocument().getElementById(`fill6`).style.fill = "red";
         }
         else {
@@ -338,7 +338,7 @@ function rd() {
         }
         
         
-        if (Object.values(db.nhiệt_độ.coverlay1)[Object.values(db.nhiệt_độ.coverlay1).length - 1] > 23 || Object.values(db.nhiệt_độ.coverlay1)[Object.values(db.nhiệt_độ.coverlay1).length - 1] < 20) {
+        if (Object.values(db.nhiệt_độ.coverlay1)[Object.values(db.nhiệt_độ.coverlay1).length - 1] > 23 || Object.values(db.nhiệt_độ.coverlay1)[Object.values(db.nhiệt_độ.coverlay1).length - 1] < 17) {
             document.getElementById("left-wapper").getSVGDocument().getElementById(`fill7`).style.fill = "red";
         }
         else {
@@ -346,7 +346,7 @@ function rd() {
         }
         
         
-        if (Object.values(db.nhiệt_độ.coverlay2)[Object.values(db.nhiệt_độ.coverlay2).length - 1] > 26 || Object.values(db.nhiệt_độ.coverlay2)[Object.values(db.nhiệt_độ.coverlay2).length - 1] < 20) {
+        if (Object.values(db.nhiệt_độ.coverlay2)[Object.values(db.nhiệt_độ.coverlay2).length - 1] > 26 || Object.values(db.nhiệt_độ.coverlay2)[Object.values(db.nhiệt_độ.coverlay2).length - 1] < 17) {
             document.getElementById("left-wapper").getSVGDocument().getElementById(`fill8`).style.fill = "red";
         }
         else {
@@ -354,14 +354,14 @@ function rd() {
         }
         
         
-        if (Object.values(db.nhiệt_độ.exposure1)[Object.values(db.nhiệt_độ.exposure1).length - 1] > 23 || Object.values(db.nhiệt_độ.exposure1)[Object.values(db.nhiệt_độ.exposure1).length - 1] < 20) {
+        if (Object.values(db.nhiệt_độ.exposure1)[Object.values(db.nhiệt_độ.exposure1).length - 1] > 23 || Object.values(db.nhiệt_độ.exposure1)[Object.values(db.nhiệt_độ.exposure1).length - 1] < 17) {
             document.getElementById("left-wapper").getSVGDocument().getElementById(`fill9`).style.fill = "red";
         }
         else {
             document.getElementById("left-wapper").getSVGDocument().getElementById(`fill9`).style.fill = "black";
         }
         
-        if (Object.values(db.nhiệt_độ.exposure2)[Object.values(db.nhiệt_độ.exposure2).length - 1] > 23 || Object.values(db.nhiệt_độ.exposure2)[Object.values(db.nhiệt_độ.exposure2).length - 1] < 20) {
+        if (Object.values(db.nhiệt_độ.exposure2)[Object.values(db.nhiệt_độ.exposure2).length - 1] > 23 || Object.values(db.nhiệt_độ.exposure2)[Object.values(db.nhiệt_độ.exposure2).length - 1] < 17) {
             document.getElementById("left-wapper").getSVGDocument().getElementById(`fill10`).style.fill = "red";
         }
         else {
