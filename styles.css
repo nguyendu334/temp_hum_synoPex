@@ -200,13 +200,14 @@ a.logo span {
 }
 
 #timedata{
+    background: rgb(153, 247, 247);
     position: absolute;
     height: 17px;
     width: 500px;
     top: 2px;
     right: 255px;
     border: none;
-    font-size: 15px;
+    font-size: 17px;
     font-family: "times new roman";
 }
 
