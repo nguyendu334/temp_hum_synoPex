@@ -63,7 +63,7 @@ function myMessageArrived(message) {
     var text = JSON.parse(message.payloadString);
     data = text;
     //   console.log(data);
-    db = data; 
+    db = data;
 }
 function rd() {
     
@@ -200,52 +200,52 @@ function rd() {
         //smt1
         data.datasets[0].data.push({
             x: Date.now(),
-            y: Object.values(db.nhiệt_độ.smt1)[day - 1],
+            y: db.nhiệt_độ.smt1,
         });
         //smt2
         data.datasets[1].data.push({
             x: Date.now(),
-            y: Object.values(db.nhiệt_độ.smt2)[day - 1],
+            y: db.nhiệt_độ.smt2,
         });
         //smt3
         data.datasets[2].data.push({
             x: Date.now(),
-            y: Object.values(db.nhiệt_độ.smt3)[day - 1],
+            y: db.nhiệt_độ.smt3,
         });
         //smt4
         data.datasets[3].data.push({
             x: Date.now(),
-            y: Object.values(db.nhiệt_độ.smt4)[day - 1],
+            y: db.nhiệt_độ.smt4,
         });
         //lazer5
         data.datasets[4].data.push({
             x: Date.now(),
-            y: Object.values(db.nhiệt_độ.lazer1)[day - 1],
+            y: db.nhiệt_độ.lazer1,
         });
         //lazer6
         data.datasets[5].data.push({
             x: Date.now(),
-            y: Object.values(db.nhiệt_độ.lazer2)[day - 1],
+            y: db.nhiệt_độ.lazer2,
         });
         //Coerlay7
         data.datasets[6].data.push({
             x: Date.now(),
-            y: Object.values(db.nhiệt_độ.coverlay1)[day - 1],
+            y: db.nhiệt_độ.coverlay1,
         });
         //Coverlay8
         data.datasets[7].data.push({
             x: Date.now(),
-            y: Object.values(db.nhiệt_độ.coverlay2)[day - 1],
+            y: db.nhiệt_độ.coverlay2,
         });
         //Exposure9
         data.datasets[8].data.push({
             x: Date.now(),
-            y: Object.values(db.nhiệt_độ.exposure1)[day - 1],
+            y: db.nhiệt_độ.exposure1,
         });
         //Exposure10
         data.datasets[9].data.push({
             x: Date.now(),
-            y: Object.values(db.nhiệt_độ.exposure2)[day - 1],
+            y: db.nhiệt_độ.exposure2,
         });
 
         //IT
@@ -263,52 +263,52 @@ function rd() {
         // smt1
         data1.datasets[0].data.push({
             x: Date.now(),
-            y: Object.values(db.độ_ẩm.smt1)[day - 1],
+            y: db.độ_ẩm.smt1,
         });
         //smt2
         data1.datasets[1].data.push({
             x: Date.now(),
-            y: Object.values(db.độ_ẩm.smt2)[day - 1],
+            y: db.độ_ẩm.smt2,
         });
         //smt3
         data1.datasets[2].data.push({
             x: Date.now(),
-            y: Object.values(db.độ_ẩm.smt3)[day - 1],
+            y: db.độ_ẩm.smt3,
         });
         //smt4
         data1.datasets[3].data.push({
             x: Date.now(),
-            y: Object.values(db.độ_ẩm.smt4)[day - 1],
+            y: db.độ_ẩm.smt4,
         });
         // lazer5
         data1.datasets[4].data.push({
             x: Date.now(),
-            y: Object.values(db.độ_ẩm.lazer1)[day - 1],
+            y: db.độ_ẩm.lazer1,
         });
         //lazer6
         data1.datasets[5].data.push({
             x: Date.now(),
-            y: Object.values(db.độ_ẩm.lazer2)[day - 1],
+            y: db.độ_ẩm.lazer2,
         });
         //Coerlay7
         data1.datasets[6].data.push({
             x: Date.now(),
-            y: Object.values(db.độ_ẩm.coverlay1)[day - 1],
+            y: db.độ_ẩm.coverlay1,
         });
         //Coverlay8
         data1.datasets[7].data.push({
             x: Date.now(),
-            y: Object.values(db.độ_ẩm.coverlay2)[day - 1],
+            y: db.độ_ẩm.coverlay2,
         });
         //Exposure9
         data1.datasets[8].data.push({
             x: Date.now(),
-            y: Object.values(db.độ_ẩm.exposure1)[day - 1],
+            y: db.độ_ẩm.exposure1,
         });
         //Exposure10
         data1.datasets[9].data.push({
             x: Date.now(),
-            y: Object.values(db.độ_ẩm.exposure2)[day - 1],
+            y: db.độ_ẩm.exposure2,
         });
 
         //IT
